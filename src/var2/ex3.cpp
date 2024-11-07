@@ -4,9 +4,13 @@ using namespace std;
 
 
 int main() {
-    double x;
+    double x, a, b, c, d;
     cin >> x;
-    double y = x *  x* x * x* x* x - 3 * x * x * x * x * x + 2 *  x * x * x * x - x * x * x + 4 * x * x - 13 * x + 2;
+    a = x*x; // x^2
+    b = a * a; // x^4
+    c = b * a; // x ^6
+    d = x * x * x;
+    double y = c - 3 * d * a + 2 *  b - d + 4 * a - 13 * x + 2;
     cout << y << endl;
     return 0;
 }
