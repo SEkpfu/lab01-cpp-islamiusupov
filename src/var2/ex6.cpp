@@ -10,7 +10,7 @@ int main() {
     cin >> n;
     for (int i = 1; i <= n; i++) {
         sum += 2 * i; 
-        S += sin(sum);
+        S += sin(sum) * sin(sum);
     }
 
     cout << "Результат серии S: " << S << endl;
